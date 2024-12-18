@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cbim="http://www.coinsweb.nl/cbim-1.1.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:cbimotl="http://www.coinsweb.nl/cbim-otl-1.1.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://kolom.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://kolom.owl" > 
+  <rdf:Description rdf:about="#_1dff46f4-75da-46b6-b2ab-b2987ab6c5a4.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:51:31.406Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolom 300x300</cbim:name>
+    <cbim:supertype rdf:resource="#_7eb08914-6490-4610-ac33-1c7e147faacc.0"/>
+    <cbim:propertyValue rdf:resource="#_8f705e77-2ae8-457d-8404-c838efcd546d.0"/>
+    <cbim:propertyValue rdf:resource="#_364dbf60-a53b-4b84-9270-5487925928b9.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_b8295c9e-e8e9-4e66-a3e7-0802f66c2dc2.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyType"/>
+    <cbim:unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm</cbim:unit>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:49:37.777Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoogte</cbim:name>
+    <cbim:valueDomain rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#XsdFloat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_3dd738c4-5908-450d-8ca7-c65c6e3f9e08.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_97e6ec53-00d8-4ca0-a7c7-d86d0e330f8d.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:21:39.962Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breedte</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_95287f6e-2628-4c68-9dad-dfc9abd8fa0a.0">
+    <cbim:zCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:zCoordinate>
+    <cbim:xCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4600.0</cbim:xCoordinate>
+    <cbim:yCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:yCoordinate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:32:13.607Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector_4</cbim:name>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Vector"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_b377b8dd-c6c2-4e58-bd11-8cd012b32aea.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_97e6ec53-00d8-4ca0-a7c7-d86d0e330f8d.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:22:06.14Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breedte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_014ffdf5-d70d-410a-b3e6-d396d856bb20.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyType"/>
+    <cbim:unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm</cbim:unit>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:24:10.986Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lengte</cbim:name>
+    <cbim:valueDomain rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#XsdFloat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_26f32cb8-ca43-4af6-9deb-479398c53824.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_d43e9b1f-2858-4857-b5cc-2c7cf9722629.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:50:42.152Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dikte</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_312434e3-3fe2-4535-9f33-7debc354dcd3.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Amount"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount_1</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:57:47.214Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:cataloguePart rdf:resource="#_79b9e742-8667-4f4c-974a-f3391e7b728b.0"/>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_d43e9b1f-2858-4857-b5cc-2c7cf9722629.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyType"/>
+    <cbim:unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm</cbim:unit>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:49:25.98Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dikte</cbim:name>
+    <cbim:valueDomain rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#XsdFloat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_376802de-5a7b-481e-9500-154260fc1e1d.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_b8295c9e-e8e9-4e66-a3e7-0802f66c2dc2.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:23:47.432Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoogte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5000.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with COINS-IO API </owl:versionInfo>
+    <owl:imports rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl"/>
+    <owl:imports rdf:resource="http://www.coinsweb.nl/cbim-otl-1.1.owl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_451dd494-6b04-477d-bf4d-deec6625059e.0">
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</cbim:value>
+    <cbim:modificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:38:10.498Z</cbim:modificationDate>
+    <cbim:cataloguePart rdf:resource="#_1dff46f4-75da-46b6-b2ab-b2987ab6c5a4.0"/>
+    <cbim:modifier rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolom rechts</cbim:name>
+    <cbim:locator rdf:resource="#_9ce57ee6-753c-4412-808e-79133e454bc8.0"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:propertyValue rdf:resource="#_376802de-5a7b-481e-9500-154260fc1e1d.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:20:25.042Z</cbim:creationDate>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Amount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_f9e06eb8-8dcf-4bcc-91fa-7c0caac8534b.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:18:14.481Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portaal</cbim:name>
+    <cbim:contains rdf:resource="#_8dccd2b7-8d93-40a6-bba2-3983d8d72e24.0"/>
+    <cbim:contains rdf:resource="#_451dd494-6b04-477d-bf4d-deec6625059e.0"/>
+    <cbim:contains rdf:resource="#_f70e2080-51be-4188-8bc8-1d5b0f1898f6.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_36929741-d072-4b7e-86f3-205139374f8a.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PhysicalObject"/>
+    <cbim:layerIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</cbim:layerIndex>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:55:00.626Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kolommen</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_8f705e77-2ae8-457d-8404-c838efcd546d.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_97e6ec53-00d8-4ca0-a7c7-d86d0e330f8d.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:52:12.063Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breedte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_53c55ffe-c3e1-435f-a823-2ee48b0f5891.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_b8295c9e-e8e9-4e66-a3e7-0802f66c2dc2.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:50:43.167Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoogte</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_735caed9-f92e-47cf-957a-738fc156bce5.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:17:34.298Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger</cbim:name>
+    <cbim:propertyValue rdf:resource="#_3dd738c4-5908-450d-8ca7-c65c6e3f9e08.0"/>
+    <cbim:propertyValue rdf:resource="#_b08b4df4-fcad-43cc-9814-866fdb7b07e2.0"/>
+    <cbim:propertyValue rdf:resource="#_9e1ca667-7cb3-46e4-8016-733331cd6821.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_1b83b0e0-1523-4859-abc7-b3a2f15bd913.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Vector"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector_3</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:59:00.156Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:yCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:yCoordinate>
+    <cbim:xCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</cbim:xCoordinate>
+    <cbim:zCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:zCoordinate>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_ff52bc4c-1de9-41a8-ac33-e38850bae3b3.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Vector"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector_1</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:58:37.456Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:yCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4000.0</cbim:yCoordinate>
+    <cbim:xCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4000.0</cbim:xCoordinate>
+    <cbim:zCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:zCoordinate>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_885d97eb-d4ce-4acb-a26b-c2b3d33fd06f.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_014ffdf5-d70d-410a-b3e6-d396d856bb20.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:25:32.024Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lengte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4000.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_ba6e26b9-57f1-4f7f-bb15-8e8fe58d2f15.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_d43e9b1f-2858-4857-b5cc-2c7cf9722629.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:22:10.552Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dikte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_7eb08914-6490-4610-ac33-1c7e147faacc.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:50:18.266Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolom</cbim:name>
+    <cbim:propertyValue rdf:resource="#_e0174167-d726-456d-b509-75f0963e648a.0"/>
+    <cbim:propertyValue rdf:resource="#_26f32cb8-ca43-4af6-9deb-479398c53824.0"/>
+    <cbim:propertyValue rdf:resource="#_53c55ffe-c3e1-435f-a823-2ee48b0f5891.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_8dccd2b7-8d93-40a6-bba2-3983d8d72e24.0">
+    <cbim:locator rdf:resource="#_d59a83fd-0567-4edb-95a6-dd3482e92f18.0"/>
+    <cbim:modifier rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:modificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:36:27.988Z</cbim:modificationDate>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:19:47.492Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</cbim:value>
+    <cbim:cataloguePart rdf:resource="#_1dff46f4-75da-46b6-b2ab-b2987ab6c5a4.0"/>
+    <cbim:propertyValue rdf:resource="#_70ce677a-c853-485c-8b70-e4fe9b62ad81.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolom links</cbim:name>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Amount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_dad958c6-e97d-4e53-bf42-6a2dd8b26189.0">
+    <cbim:zCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</cbim:zCoordinate>
+    <cbim:xCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:xCoordinate>
+    <cbim:yCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:yCoordinate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:32:21.28Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector_5</cbim:name>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Vector"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_63eef03b-305d-488b-81dc-0c31a9d7b165.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Locator"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locator_1</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:58:30.438Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_79b9e742-8667-4f4c-974a-f3391e7b728b.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:52:39.999Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mijn Kolom</cbim:name>
+    <cbim:supertype rdf:resource="#_1dff46f4-75da-46b6-b2ab-b2987ab6c5a4.0"/>
+    <cbim:propertyValue rdf:resource="#_100fc4e8-aabe-45c5-b920-835199b73f5a.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_364dbf60-a53b-4b84-9270-5487925928b9.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_d43e9b1f-2858-4857-b5cc-2c7cf9722629.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:52:16.541Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dikte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_0bf74bc7-41dd-4959-91d8-be68a0397ebc.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Vector"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector_2</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:58:56.574Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:yCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:yCoordinate>
+    <cbim:xCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:xCoordinate>
+    <cbim:zCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</cbim:zCoordinate>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_e0174167-d726-456d-b509-75f0963e648a.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_97e6ec53-00d8-4ca0-a7c7-d86d0e330f8d.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:50:36.682Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breedte</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_100fc4e8-aabe-45c5-b920-835199b73f5a.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_b8295c9e-e8e9-4e66-a3e7-0802f66c2dc2.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:53:53.539Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoogte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5000.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_9e1ca667-7cb3-46e4-8016-733331cd6821.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_014ffdf5-d70d-410a-b3e6-d396d856bb20.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:24:54.587Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lengte</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_b08b4df4-fcad-43cc-9814-866fdb7b07e2.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_d43e9b1f-2858-4857-b5cc-2c7cf9722629.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:21:44.295Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dikte</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_12039a50-9cee-4001-87c8-1352756ddbf3.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:20:52.281Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger 300x300</cbim:name>
+    <cbim:supertype rdf:resource="#_735caed9-f92e-47cf-957a-738fc156bce5.0"/>
+    <cbim:propertyValue rdf:resource="#_b377b8dd-c6c2-4e58-bd11-8cd012b32aea.0"/>
+    <cbim:propertyValue rdf:resource="#_ba6e26b9-57f1-4f7f-bb15-8e8fe58d2f15.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_97e6ec53-00d8-4ca0-a7c7-d86d0e330f8d.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyType"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breedte</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:49:15.477Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:valueDomain rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#XsdFloat"/>
+    <cbim:unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm</cbim:unit>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_f70e2080-51be-4188-8bc8-1d5b0f1898f6.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Amount"/>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:22:29.408Z</cbim:creationDate>
+    <cbim:propertyValue rdf:resource="#_885d97eb-d4ce-4acb-a26b-c2b3d33fd06f.0"/>
+    <cbim:cataloguePart rdf:resource="#_12039a50-9cee-4001-87c8-1352756ddbf3.0"/>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</cbim:value>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ligger</cbim:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_acf97fa2-bf04-4b75-b746-2893c2b80ce2.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PhysicalObject"/>
+    <cbim:layerIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</cbim:layerIndex>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:56:51.135Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:physicalParent rdf:resource="#_36929741-d072-4b7e-86f3-205139374f8a.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kolom A</cbim:name>
+    <cbim:contains rdf:resource="#_312434e3-3fe2-4535-9f33-7debc354dcd3.0"/>
+    <cbim:locator rdf:resource="#_63eef03b-305d-488b-81dc-0c31a9d7b165.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_78289c1c-6464-465c-84bd-240fa966077b.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PersonOrOrganisation"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peter</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T08:47:30.301Z</cbim:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_70ce677a-c853-485c-8b70-e4fe9b62ad81.0">
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#PropertyValue"/>
+    <cbim:propertyType rdf:resource="#_b8295c9e-e8e9-4e66-a3e7-0802f66c2dc2.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:23:20.837Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoogte</cbim:name>
+    <cbim:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5000.0</cbim:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_2f12c9b5-68d3-4665-9a40-d98e404a3ee5.0">
+    <cbim:zCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:zCoordinate>
+    <cbim:xCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</cbim:xCoordinate>
+    <cbim:yCoordinate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</cbim:yCoordinate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:32:24.102Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector_6</cbim:name>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Vector"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_17503f26-6a3d-44cc-9917-1faeffd46646.0">
+    <cbim:supertype rdf:resource="#_f9e06eb8-8dcf-4bcc-91fa-7c0caac8534b.0"/>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mijn Portaal</cbim:name>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:39:21.094Z</cbim:creationDate>
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#CataloguePart"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_9ce57ee6-753c-4412-808e-79133e454bc8.0">
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:33:32.263Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locator_3</cbim:name>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Locator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#_d59a83fd-0567-4edb-95a6-dd3482e92f18.0">
+    <cbim:creator rdf:resource="#_78289c1c-6464-465c-84bd-240fa966077b.0"/>
+    <cbim:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-13T09:32:08.638Z</cbim:creationDate>
+    <cbim:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locator_2</cbim:name>
+    <rdf:type rdf:resource="http://www.coinsweb.nl/cbim-1.1.owl#Locator"/>
+  </rdf:Description>
+</rdf:RDF>

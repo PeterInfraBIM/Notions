@@ -1,0 +1,7 @@
+README.txt
+notions.py
+setup.py
+notions.egg-info/PKG-INFO
+notions.egg-info/SOURCES.txt
+notions.egg-info/dependency_links.txt
+notions.egg-info/top_level.txt

@@ -1,0 +1,44 @@
+type Anything {
+	id: ID!
+	views: [View!]!
+}
+
+enum Ref {
+	Ref
+	NoRef
+}
+
+enum DerivedConcept {
+	Node
+	Link
+}
+
+interface View {
+    name: String!
+}
+
+type RefView implements View {
+	name: String!
+	ref: Ref!
+}
+
+type AythingMutationResponse {
+    "Similar to HTTP status code, represents the status of the mutation"
+    code: Int!
+    "Indicates whether the mutation was successful"
+    success: Boolean!
+    "Human-readable message for the UI"
+    message: String!
+    "Creation result"
+    anything: Anything!
+}
+
+type Mutation {
+    createAnything(id: ID!): AythingMutationResponse!
+    addRef(id: ID!, ref: Ref!): AythingMutationResponse!
+}
+
+type Query {
+    concepts(id: ID!): [DerivedConcept!]!
+    isConcept(id: ID!, concept: DerivedConcept!): Boolean!
+}

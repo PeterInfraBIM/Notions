@@ -1,0 +1,7 @@
+README.txt
+notions_legal.py
+setup.py
+notions_legal.egg-info/PKG-INFO
+notions_legal.egg-info/SOURCES.txt
+notions_legal.egg-info/dependency_links.txt
+notions_legal.egg-info/top_level.txt

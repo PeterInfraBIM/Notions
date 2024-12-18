@@ -1,0 +1,84 @@
+enum Age {
+	ADULT
+	CHILD
+}
+
+enum GenderByDNA {
+	XX
+	XY
+}
+
+enum PersonConcept {
+	ADULT
+	BOY
+	CHILD
+	FEMALE
+	GIRL
+	MALE
+	MAN
+	PERSON
+	WOMAN
+}
+
+input PersonInput {
+	age: Age
+	gender: GenderByDNA
+}
+
+type Person {
+	id: ID!
+	age: Age
+	gender: GenderByDNA
+}
+
+
+type PersonCreationResponse {
+	"Similar to HTTP status code, represents the status of the mutation"
+	code: Int!
+	"Indicates whether the mutation was successful"
+	success: Boolean!
+	"Human-readable message for the UI"
+	message: String!
+	"Creation result"
+	person: Person!
+}
+
+type Query {
+	concepts(personId: ID!): [PersonConcept!]!
+	isConcept(personId: ID!, concept: PersonConcept!): Boolean!
+}
+
+type Mutation {
+	createPersonByInput(id: ID!, person: PersonInput): PersonCreationResponse!
+	createPersonByConcept(id: ID!, concept: PersonConcept): PersonCreationResponse!
+}
+
+_________________________
+
+mutation CreatePersonByInput($id: ID!, $person: PersonInput!){
+	createPersonByInput(id: $id, person: $person) {
+		age
+		gender
+	}
+}
+
+{
+	"id": "32ac783d79a3",
+	"person": {
+		"age": ADULT,
+		"gender": XX
+	}
+}
+
+_________________________
+
+mutation CreatePersonByConcept($id: ID!, $concept: PersonConcept!){
+	createPersonByConcept(id: $id, concept: $concept) {
+		concept
+	}
+}
+
+{
+	"id": "32ac783d79a3",
+	"concept": ADULT
+}

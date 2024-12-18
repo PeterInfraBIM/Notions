@@ -1,0 +1,83 @@
+enum GenderByDNA {
+    XX
+    XY
+}
+
+enum LegalGender {
+    M
+    F
+}
+
+enum DerivedConcept {
+    LEGAL_ADULT
+    LEGAL_BOY
+    LEGAL_CHILD
+    LEGAL_FEMALE
+    LEGAL_GIRL
+    LEGAL_MALE
+    LEGAL_MAN
+    LEGAL_WOMAN
+    BIOMEDICAL_ADULT
+    BIOMEDICAL_BOY
+    BIOMEDICAL_CHILD
+    BIOMEDICAL_FEMALE
+    BIOMEDICAL_GIRL
+    BIOMEDICAL_MALE
+    BIOMEDICAL_MAN
+    BIOMEDICAL_WOMAN
+    PERSON
+}
+
+input LegalViewInput {
+    legalAge: Int!
+    legalGender: LegalGender!
+}
+
+input BiomedicalViewInput {
+    biomedicalAge: Float!
+    biomedicalGender: GenderByDNA!
+}
+
+interface View {
+    name: String!
+}
+
+type LegalView implements View {
+    name: String!
+    legalAge: Int!
+    legalGender: LegalGender!
+}
+
+type BiomedicalView implements View {
+    name: String!
+    biomedicalAge: Float!
+    biomedicalGender: GenderByDNA!
+}
+
+type Person {
+    id: ID!
+    views: [View!]!
+}
+
+
+type PersonMutationResponse {
+    "Similar to HTTP status code, represents the status of the mutation"
+    code: Int!
+    "Indicates whether the mutation was successful"
+    success: Boolean!
+    "Human-readable message for the UI"
+    message: String!
+    "Creation result"
+    person: Person!
+}
+
+type Query {
+    concepts(personId: ID!): [DerivedConcept!]!
+    isConcept(personId: ID!, concept: DerivedConcept!): Boolean!
+}
+
+type Mutation {
+    createPerson(personId: ID!): PersonMutationResponse!
+    addLegalView(personId: ID!, view: LegalViewInput!): PersonMutationResponse!
+    addBiomedicalView(personId: ID!, view: BiomedicalViewInput): PersonMutationResponse!
+}
