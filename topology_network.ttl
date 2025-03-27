@@ -1,0 +1,158 @@
+# baseURI: http://infrabim.nl/kip/topology_network
+# prefix: tn
+
+@prefix : <http://infrabim.nl/kip/topology_network#> .
+@prefix data: <http://infrabim.nl/kip/topology_network/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/topology_network>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+tn:Aggregation
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Link ;
+.
+tn:Connection
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Link ;
+.
+tn:DownPort
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:SlotPort ;
+.
+tn:InsidePort
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:SlotPort ;
+.
+tn:Link
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty tn:arrival ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty tn:departure ;
+    ] ;
+.
+tn:Module
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Node ;
+.
+tn:ModulePort
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Port ;
+.
+tn:Node
+  rdf:type rdfs:Class ;
+.
+tn:OutsidePort
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:SlotPort ;
+.
+tn:Port
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Node ;
+.
+tn:Slot
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Node ;
+.
+tn:SlotPort
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Port ;
+.
+tn:TopologicalNode
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:Node ;
+.
+tn:UpPort
+  rdf:type rdfs:Class ;
+  rdfs:subClassOf tn:SlotPort ;
+.
+tn:arrival
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Link ;
+  rdfs:range tn:Node ;
+.
+tn:assembly
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Aggregation ;
+  rdfs:range tn:Node ;
+  rdfs:subPropertyOf tn:arrival ;
+.
+tn:departure
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Link ;
+  rdfs:range tn:Node ;
+.
+tn:dimension
+  rdf:type rdf:Property ;
+  rdfs:domain tn:TopologicalNode ;
+  rdfs:range xsd:integer ;
+.
+tn:down
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Connection ;
+  rdfs:range tn:DownPort ;
+  rdfs:subPropertyOf tn:departure ;
+.
+tn:has_down_port
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Slot ;
+  rdfs:range tn:DownPort ;
+  rdfs:subPropertyOf tn:has_port ;
+.
+tn:has_inside_port
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Slot ;
+  rdfs:range tn:InsidePort ;
+  rdfs:subPropertyOf tn:has_port ;
+.
+tn:has_outside_port
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Slot ;
+  rdfs:range tn:OutsidePort ;
+  rdfs:subPropertyOf tn:has_port ;
+.
+tn:has_port
+  rdf:type rdf:Property ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          tn:Slot
+          tn:Module
+        ) ;
+    ] ;
+  rdfs:range tn:Port ;
+.
+tn:has_up_port
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Slot ;
+  rdfs:range tn:UpPort ;
+  rdfs:subPropertyOf tn:has_port ;
+.
+tn:part
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Aggregation ;
+  rdfs:range tn:Node ;
+  rdfs:subPropertyOf tn:departure ;
+.
+tn:topological_node
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Slot ;
+  rdfs:range tn:TopologicalNode ;
+.
+tn:up
+  rdf:type rdf:Property ;
+  rdfs:domain tn:Connection ;
+  rdfs:range tn:UpPort ;
+  rdfs:subPropertyOf tn:arrival ;
+.
