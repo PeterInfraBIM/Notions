@@ -1,0 +1,19 @@
+@prefix : <http://infrabim.nl/kip/demo/values#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59> tn:has_parameter_value_set <http://infrabim.nl/kip/demo/building#5b7f7e5d-8697-4eb2-bd49-275472f176b4> .
+
+<http://infrabim.nl/kip/demo/building#5b7f7e5d-8697-4eb2-bd49-275472f176b4> a nt:PerceptiveFrameInstance ;
+    nt:notion_value :91a61246-3b5c-4857-9db7-bd069067f4df ;
+    nt:perceptive_frame <5e834139-da06-4b58-be62-3a5b38518136> .
+
+:91a61246-3b5c-4857-9db7-bd069067f4df a nt:NotionValue ;
+    rdfs:label "Required_Window"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Window"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+

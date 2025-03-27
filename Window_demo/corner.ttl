@@ -1,0 +1,22 @@
+@prefix : <http://infrabim.nl/kip/demo/corner#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dcc67a6f-4352-44b5-b098-2009fbf331f3 a tn:Module ;
+    rdfs:label "Offered Joint"^^xsd:string ;
+    tn:has_parameter_type_set :04ac5089-6471-46f5-9fbc-17b1b82a926a ;
+    tn:has_port :dcc67a6f-4352-44b5-b098-2009fbf331f3_0,
+        :dcc67a6f-4352-44b5-b098-2009fbf331f3_1 .
+
+:04ac5089-6471-46f5-9fbc-17b1b82a926a a nt:PerceptiveFrame ;
+    rdfs:label "04ac5089-6471-46f5-9fbc-17b1b82a926a"^^xsd:string ;
+    nt:frame nt:NF_SpecificName .
+
+:dcc67a6f-4352-44b5-b098-2009fbf331f3_0 a tn:ModulePort ;
+    rdfs:label "Offered Joint Port0"^^xsd:string .
+
+:dcc67a6f-4352-44b5-b098-2009fbf331f3_1 a tn:ModulePort ;
+    rdfs:label "Offered Joint Port1"^^xsd:string .
+

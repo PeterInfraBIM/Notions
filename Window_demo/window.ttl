@@ -1,0 +1,338 @@
+@prefix : <http://infrabim.nl/kip/demo/window#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0e8dbf7e-f679-47ed-ac1e-1812f307f256 a tn:Connection ;
+    tn:down :0172be31-3d17-4fc2-bb24-3507ab21e5e8_d0 ;
+    tn:up :26c96058-0593-478d-9535-fed1f4fe877d_u1 .
+
+:15091e75-994e-4af8-9c29-dd5d7b0fafb6 a tn:Connection ;
+    tn:down :a6c0133c-d05f-4810-90c1-273a64fedeaa_d3 ;
+    tn:up :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_u0 .
+
+:26cc8d60-9791-4d89-88cf-b2b91c169606 a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :4d2ed7ee-e6ff-4a04-b654-c0474080035d .
+
+:27d17940-82c1-44bb-afba-e2d37537523c a tn:Connection ;
+    tn:down :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d1 ;
+    tn:up :55774a83-0acb-47bf-83cc-9bb7bac58b3c_u1 .
+
+:47cb8ca6-9aff-433c-9d33-a79dfdb5a21e a tn:Connection ;
+    tn:down :31d07757-a510-4aa0-9341-1b2fbab41cd0_d1 ;
+    tn:up :55774a83-0acb-47bf-83cc-9bb7bac58b3c_u0 .
+
+:4861832e-b709-4582-9fd9-a7f7d22dc524 a tn:Connection ;
+    tn:down :0172be31-3d17-4fc2-bb24-3507ab21e5e8_d1 ;
+    tn:up :d759f0fb-0405-40ff-8bbf-393edfe60641_u0 .
+
+:4aa3e18a-0f1f-4025-bdf9-401107ee48ca a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5_0 ;
+    tn:part :0172be31-3d17-4fc2-bb24-3507ab21e5e8_o0 .
+
+:4af83503-face-45b9-a226-c67e9cf20671 a tn:Connection ;
+    tn:down :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d0 ;
+    tn:up :26c96058-0593-478d-9535-fed1f4fe877d_u0 .
+
+:4c4b4270-82de-4f32-bf2f-c52a6b2c22f5 a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5_3 ;
+    tn:part :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_o0 .
+
+:71642eda-990e-413d-a383-a17d0ef7ccf7 a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :7dbc5958-a24a-4f76-b036-6bc1b900d4e2 .
+
+:764cc251-2361-49c7-8699-1c69f7083feb a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39 .
+
+:82e602bb-6a29-4f27-8557-1db8e75a130b a tn:Connection ;
+    tn:down :a6c0133c-d05f-4810-90c1-273a64fedeaa_d1 ;
+    tn:up :31d07757-a510-4aa0-9341-1b2fbab41cd0_u0 .
+
+:86703b8f-e70c-432c-b636-6b133d9493d0 a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :d759f0fb-0405-40ff-8bbf-393edfe60641 .
+
+:8974877f-deb2-4387-8d95-f45d0581b72d a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :55774a83-0acb-47bf-83cc-9bb7bac58b3c .
+
+:967ff73c-626b-4d2a-8f4f-744e5fbb2c40 a tn:Connection ;
+    tn:down :31d07757-a510-4aa0-9341-1b2fbab41cd0_d0 ;
+    tn:up :4d2ed7ee-e6ff-4a04-b654-c0474080035d_u1 .
+
+:9a5d0382-85fe-4668-afb4-e714f1af4313 a tn:Connection ;
+    tn:down :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d0 ;
+    tn:up :d759f0fb-0405-40ff-8bbf-393edfe60641_u1 .
+
+:9b803216-112e-475c-907b-9ceec37e4fb1 a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :26c96058-0593-478d-9535-fed1f4fe877d .
+
+:c3b32016-e90e-489c-8c7e-3d24126ce6af a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :a6c0133c-d05f-4810-90c1-273a64fedeaa .
+
+:c77582e6-0837-4fb2-9d29-5a91884efcc3 a tn:Connection ;
+    tn:down :a6c0133c-d05f-4810-90c1-273a64fedeaa_d0 ;
+    tn:up :0172be31-3d17-4fc2-bb24-3507ab21e5e8_u0 .
+
+:d39d6dc0-f0a0-42f6-b3e4-ad5ba85db99f a tn:Connection ;
+    tn:down :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d1 ;
+    tn:up :4d2ed7ee-e6ff-4a04-b654-c0474080035d_u0 .
+
+:d5d05959-3f0f-4783-8e1e-837c4089afcc a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :0172be31-3d17-4fc2-bb24-3507ab21e5e8 .
+
+:de012f72-16cc-4eaa-9b51-1f5a7b81b147 a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5 ;
+    tn:part :31d07757-a510-4aa0-9341-1b2fbab41cd0 .
+
+:df37a67b-faf9-450a-9ce7-9642f39f4e7f a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5_2 ;
+    tn:part :31d07757-a510-4aa0-9341-1b2fbab41cd0_o0 .
+
+:dfd554f3-72c8-488b-aa72-1bd46b358c57 a tn:Connection ;
+    tn:down :a6c0133c-d05f-4810-90c1-273a64fedeaa_d2 ;
+    tn:up :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_u0 .
+
+:f2ebb930-221f-4c27-bf51-cb5bc29e340e a tn:Aggregation ;
+    tn:assembly :b3f9149f-a726-4977-af2a-1821687be2e5_1 ;
+    tn:part :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_o0 .
+
+:0172be31-3d17-4fc2-bb24-3507ab21e5e8 a tn:Slot ;
+    rdfs:label "1D slot JAMB Top"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_down_port :0172be31-3d17-4fc2-bb24-3507ab21e5e8_d0,
+        :0172be31-3d17-4fc2-bb24-3507ab21e5e8_d1 ;
+    tn:has_outside_port :0172be31-3d17-4fc2-bb24-3507ab21e5e8_o0 ;
+    tn:has_parameter_type_set :22a4133a-c7b4-4c14-b11c-7194fdfb0a96 ;
+    tn:has_up_port :0172be31-3d17-4fc2-bb24-3507ab21e5e8_u0 .
+
+:0b35d00d-b4f5-4ee8-a02e-3c84cde27e39 a tn:Slot ;
+    rdfs:label "1D slot SILL Right"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_down_port :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d0,
+        :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d1 ;
+    tn:has_outside_port :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_o0 ;
+    tn:has_parameter_type_set :dec0cff4-de1e-458d-8d2c-00c8dbec009a ;
+    tn:has_up_port :0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_u0 .
+
+:17a42f2b-21da-46e9-84f4-2b62983a1d21 a nt:PerceptiveFrame ;
+    rdfs:label "17a42f2b-21da-46e9-84f4-2b62983a1d21"^^xsd:string ;
+    nt:frame nt:NF_Length,
+        nt:NF_SpecificName,
+        nt:NF_Uf .
+
+:22a4133a-c7b4-4c14-b11c-7194fdfb0a96 a nt:PerceptiveFrame ;
+    rdfs:label "22a4133a-c7b4-4c14-b11c-7194fdfb0a96"^^xsd:string ;
+    nt:frame nt:NF_Length,
+        nt:NF_SpecificName,
+        nt:NF_Uf .
+
+:26c96058-0593-478d-9535-fed1f4fe877d a tn:Slot ;
+    rdfs:label "0D slot JOINT TL"^^xsd:string ;
+    tn:dimension "0"^^xsd:int ;
+    tn:has_parameter_type_set :90ed72f3-fa98-4063-869a-f3da93a9456d ;
+    tn:has_up_port :26c96058-0593-478d-9535-fed1f4fe877d_u0,
+        :26c96058-0593-478d-9535-fed1f4fe877d_u1 .
+
+:31d07757-a510-4aa0-9341-1b2fbab41cd0 a tn:Slot ;
+    rdfs:label "1D slot JAMB Bottom"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_down_port :31d07757-a510-4aa0-9341-1b2fbab41cd0_d0,
+        :31d07757-a510-4aa0-9341-1b2fbab41cd0_d1 ;
+    tn:has_outside_port :31d07757-a510-4aa0-9341-1b2fbab41cd0_o0 ;
+    tn:has_parameter_type_set :9b74717c-70d5-4d60-ba42-4efafb75ceca ;
+    tn:has_up_port :31d07757-a510-4aa0-9341-1b2fbab41cd0_u0 .
+
+:4d2ed7ee-e6ff-4a04-b654-c0474080035d a tn:Slot ;
+    rdfs:label "0D slot JOINT BL"^^xsd:string ;
+    tn:dimension "0"^^xsd:int ;
+    tn:has_parameter_type_set :a7bcfa2c-ff30-453d-8c34-371b7104ff44 ;
+    tn:has_up_port :4d2ed7ee-e6ff-4a04-b654-c0474080035d_u0,
+        :4d2ed7ee-e6ff-4a04-b654-c0474080035d_u1 .
+
+:4feef65d-7885-4773-bff1-da40c7acab1f a nt:PerceptiveFrame ;
+    rdfs:label "4feef65d-7885-4773-bff1-da40c7acab1f"^^xsd:string ;
+    nt:frame nt:NF_Height,
+        nt:NF_Length,
+        nt:NF_Material,
+        nt:NF_SpecificName,
+        nt:NF_Uw .
+
+:55774a83-0acb-47bf-83cc-9bb7bac58b3c a tn:Slot ;
+    rdfs:label "0D slot JOINT BR"^^xsd:string ;
+    tn:dimension "0"^^xsd:int ;
+    tn:has_parameter_type_set :b24f2d3a-136d-407b-87e3-1142da702495 ;
+    tn:has_up_port :55774a83-0acb-47bf-83cc-9bb7bac58b3c_u0,
+        :55774a83-0acb-47bf-83cc-9bb7bac58b3c_u1 .
+
+:72357296-50aa-49bf-8f10-a4ac790ea8dd a nt:PerceptiveFrame ;
+    rdfs:label "72357296-50aa-49bf-8f10-a4ac790ea8dd"^^xsd:string ;
+    nt:frame nt:NF_Height,
+        nt:NF_Length,
+        nt:NF_SpecificName,
+        nt:NF_Ug .
+
+:7dbc5958-a24a-4f76-b036-6bc1b900d4e2 a tn:Slot ;
+    rdfs:label "1D slot SILL Left"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_down_port :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d0,
+        :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d1 ;
+    tn:has_outside_port :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_o0 ;
+    tn:has_parameter_type_set :17a42f2b-21da-46e9-84f4-2b62983a1d21 ;
+    tn:has_up_port :7dbc5958-a24a-4f76-b036-6bc1b900d4e2_u0 .
+
+:90ed72f3-fa98-4063-869a-f3da93a9456d a nt:PerceptiveFrame ;
+    rdfs:label "90ed72f3-fa98-4063-869a-f3da93a9456d"^^xsd:string ;
+    nt:frame nt:NF_SpecificName .
+
+:9b74717c-70d5-4d60-ba42-4efafb75ceca a nt:PerceptiveFrame ;
+    rdfs:label "9b74717c-70d5-4d60-ba42-4efafb75ceca"^^xsd:string ;
+    nt:frame nt:NF_Length,
+        nt:NF_SpecificName,
+        nt:NF_Uf .
+
+:a6c0133c-d05f-4810-90c1-273a64fedeaa a tn:Slot ;
+    rdfs:label "2D slot GLAZING"^^xsd:string ;
+    tn:dimension "2"^^xsd:int ;
+    tn:has_down_port :a6c0133c-d05f-4810-90c1-273a64fedeaa_d0,
+        :a6c0133c-d05f-4810-90c1-273a64fedeaa_d1,
+        :a6c0133c-d05f-4810-90c1-273a64fedeaa_d2,
+        :a6c0133c-d05f-4810-90c1-273a64fedeaa_d3 ;
+    tn:has_parameter_type_set :72357296-50aa-49bf-8f10-a4ac790ea8dd .
+
+:a7bcfa2c-ff30-453d-8c34-371b7104ff44 a nt:PerceptiveFrame ;
+    rdfs:label "a7bcfa2c-ff30-453d-8c34-371b7104ff44"^^xsd:string ;
+    nt:frame nt:NF_SpecificName .
+
+:b24f2d3a-136d-407b-87e3-1142da702495 a nt:PerceptiveFrame ;
+    rdfs:label "b24f2d3a-136d-407b-87e3-1142da702495"^^xsd:string ;
+    nt:frame nt:NF_SpecificName .
+
+:c68ba561-c546-4444-90d8-8672b06a88bc a nt:PerceptiveFrame ;
+    rdfs:label "c68ba561-c546-4444-90d8-8672b06a88bc"^^xsd:string ;
+    nt:frame nt:NF_SpecificName .
+
+:d759f0fb-0405-40ff-8bbf-393edfe60641 a tn:Slot ;
+    rdfs:label "0D slot JOINT TR"^^xsd:string ;
+    tn:dimension "0"^^xsd:int ;
+    tn:has_parameter_type_set :c68ba561-c546-4444-90d8-8672b06a88bc ;
+    tn:has_up_port :d759f0fb-0405-40ff-8bbf-393edfe60641_u0,
+        :d759f0fb-0405-40ff-8bbf-393edfe60641_u1 .
+
+:dec0cff4-de1e-458d-8d2c-00c8dbec009a a nt:PerceptiveFrame ;
+    rdfs:label "dec0cff4-de1e-458d-8d2c-00c8dbec009a"^^xsd:string ;
+    nt:frame nt:NF_Length,
+        nt:NF_SpecificName,
+        nt:NF_Uf .
+
+:0172be31-3d17-4fc2-bb24-3507ab21e5e8_d0 a tn:DownPort ;
+    rdfs:label "1D slot JAMB Top DownPort0"^^xsd:string .
+
+:0172be31-3d17-4fc2-bb24-3507ab21e5e8_d1 a tn:DownPort ;
+    rdfs:label "1D slot JAMB Top DownPort1"^^xsd:string .
+
+:0172be31-3d17-4fc2-bb24-3507ab21e5e8_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot JAMB Top OutsidePort0"^^xsd:string .
+
+:0172be31-3d17-4fc2-bb24-3507ab21e5e8_u0 a tn:UpPort ;
+    rdfs:label "1D slot JAMB Top UpPort0"^^xsd:string .
+
+:0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d0 a tn:DownPort ;
+    rdfs:label "1D slot SILL Right DownPort0"^^xsd:string .
+
+:0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d1 a tn:DownPort ;
+    rdfs:label "1D slot SILL Right DownPort1"^^xsd:string .
+
+:0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot SILL Right OutsidePort0"^^xsd:string .
+
+:0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_u0 a tn:UpPort ;
+    rdfs:label "1D slot SILL Right UpPort0"^^xsd:string .
+
+:26c96058-0593-478d-9535-fed1f4fe877d_u0 a tn:UpPort ;
+    rdfs:label "0D slot JOINT TL UpPort0"^^xsd:string .
+
+:26c96058-0593-478d-9535-fed1f4fe877d_u1 a tn:UpPort ;
+    rdfs:label "0D slot JOINT TL UpPort1"^^xsd:string .
+
+:31d07757-a510-4aa0-9341-1b2fbab41cd0_d0 a tn:DownPort ;
+    rdfs:label "1D slot JAMB Bottom DownPort0"^^xsd:string .
+
+:31d07757-a510-4aa0-9341-1b2fbab41cd0_d1 a tn:DownPort ;
+    rdfs:label "1D slot JAMB Bottom DownPort1"^^xsd:string .
+
+:31d07757-a510-4aa0-9341-1b2fbab41cd0_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot JAMB Bottom OutsidePort0"^^xsd:string .
+
+:31d07757-a510-4aa0-9341-1b2fbab41cd0_u0 a tn:UpPort ;
+    rdfs:label "1D slot JAMB Bottom UpPort0"^^xsd:string .
+
+:4d2ed7ee-e6ff-4a04-b654-c0474080035d_u0 a tn:UpPort ;
+    rdfs:label "0D slot JOINT BL UpPort0"^^xsd:string .
+
+:4d2ed7ee-e6ff-4a04-b654-c0474080035d_u1 a tn:UpPort ;
+    rdfs:label "0D slot JOINT BL UpPort1"^^xsd:string .
+
+:55774a83-0acb-47bf-83cc-9bb7bac58b3c_u0 a tn:UpPort ;
+    rdfs:label "0D slot JOINT BR UpPort0"^^xsd:string .
+
+:55774a83-0acb-47bf-83cc-9bb7bac58b3c_u1 a tn:UpPort ;
+    rdfs:label "0D slot JOINT BR UpPort1"^^xsd:string .
+
+:7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d0 a tn:DownPort ;
+    rdfs:label "1D slot SILL Left DownPort0"^^xsd:string .
+
+:7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d1 a tn:DownPort ;
+    rdfs:label "1D slot SILL Left DownPort1"^^xsd:string .
+
+:7dbc5958-a24a-4f76-b036-6bc1b900d4e2_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot SILL Left OutsidePort0"^^xsd:string .
+
+:7dbc5958-a24a-4f76-b036-6bc1b900d4e2_u0 a tn:UpPort ;
+    rdfs:label "1D slot SILL Left UpPort0"^^xsd:string .
+
+:a6c0133c-d05f-4810-90c1-273a64fedeaa_d0 a tn:DownPort ;
+    rdfs:label "2D slot GLAZING DownPort0"^^xsd:string .
+
+:a6c0133c-d05f-4810-90c1-273a64fedeaa_d1 a tn:DownPort ;
+    rdfs:label "2D slot GLAZING DownPort1"^^xsd:string .
+
+:a6c0133c-d05f-4810-90c1-273a64fedeaa_d2 a tn:DownPort ;
+    rdfs:label "2D slot GLAZING DownPort2"^^xsd:string .
+
+:a6c0133c-d05f-4810-90c1-273a64fedeaa_d3 a tn:DownPort ;
+    rdfs:label "2D slot GLAZING DownPort3"^^xsd:string .
+
+:b3f9149f-a726-4977-af2a-1821687be2e5_0 a tn:ModulePort ;
+    rdfs:label "Offered_Window Port0"^^xsd:string .
+
+:b3f9149f-a726-4977-af2a-1821687be2e5_1 a tn:ModulePort ;
+    rdfs:label "Offered_Window Port1"^^xsd:string .
+
+:b3f9149f-a726-4977-af2a-1821687be2e5_2 a tn:ModulePort ;
+    rdfs:label "Offered_Window Port2"^^xsd:string .
+
+:b3f9149f-a726-4977-af2a-1821687be2e5_3 a tn:ModulePort ;
+    rdfs:label "Offered_Window Port3"^^xsd:string .
+
+:d759f0fb-0405-40ff-8bbf-393edfe60641_u0 a tn:UpPort ;
+    rdfs:label "0D slot JOINT TR UpPort0"^^xsd:string .
+
+:d759f0fb-0405-40ff-8bbf-393edfe60641_u1 a tn:UpPort ;
+    rdfs:label "0D slot JOINT TR UpPort1"^^xsd:string .
+
+:b3f9149f-a726-4977-af2a-1821687be2e5 a tn:Module ;
+    rdfs:label "Offered_Window"^^xsd:string ;
+    tn:has_parameter_type_set :4feef65d-7885-4773-bff1-da40c7acab1f ;
+    tn:has_port :b3f9149f-a726-4977-af2a-1821687be2e5_0,
+        :b3f9149f-a726-4977-af2a-1821687be2e5_1,
+        :b3f9149f-a726-4977-af2a-1821687be2e5_2,
+        :b3f9149f-a726-4977-af2a-1821687be2e5_3 .
+

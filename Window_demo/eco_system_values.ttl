@@ -1,0 +1,28 @@
+@prefix : <http://infrabim.nl/kip/demo/eco_system_values#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5> tn:has_parameter_value_set :854cb4a3-0a55-4193-9af0-999410f9135f .
+
+<http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_3> tn:has_parameter_value_set :77eea101-705d-4a62-977d-e0bdca2e97ec .
+
+:443a42bf-689a-4e9f-9892-31bdd5d71c90 a nt:NotionValue ;
+    rdfs:label "REY ECO CP 003"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "REY ECO CP 003"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:77eea101-705d-4a62-977d-e0bdca2e97ec a nt:PerceptiveFrameInstance ;
+    nt:notion_value :d8922acb-c3db-4b9d-9ecb-31b24080d357 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/eco_system#c64b6a2f-17f3-44c4-9472-46c0751be23e> .
+
+:854cb4a3-0a55-4193-9af0-999410f9135f a nt:PerceptiveFrameInstance ;
+    nt:notion_value :443a42bf-689a-4e9f-9892-31bdd5d71c90 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/eco_system#16277c66-26c0-4dd9-9469-b6288801ce3b> .
+
+:d8922acb-c3db-4b9d-9ecb-31b24080d357 a nt:NotionValue ;
+    nt:frame nt:NF_Offset .
+

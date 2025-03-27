@@ -17,6 +17,10 @@ class ConnectionClass(Enum):
     DOWN = "DOWN"
     UP = "UP"
 
+class SelectionClass(Enum):
+    SELECTS = "SELECTS"
+    IS_SELECTED_BY = "IS_SELECTED_BY"
+
 class ConfigurationManagementRelationClass(Enum):
     CONNECTION_CONNECTION_SELECTION = "CONNECTION_CONNECTION_SELECTION"
     CONNECTION_NODE_ENCLOSURE = "CONNECTION_NODE_ENCLOSURE"
@@ -216,6 +220,45 @@ def init_connection():
         discriminator=discriminator_function
     )
 
+def init_selection():
+    def converter_function(args):
+        if args.get("orientation"):
+            orientation = OrientationClass(args["orientation"])
+        else:
+            orientation = OrientationClass(args["NF_Orientation"].args["orientation"])
+        if orientation.name is OrientationClass.DEPARTURE.name:
+            return {"selection": SelectionClass.SELECTS.name}
+        else:
+            return {"selection": SelectionClass.IS_SELECTED_BY.name}
+    
+    def discriminator_function(args):
+        return args["selection"]
+    
+    NotionFrame(
+        id="NF_Selection",
+        parameter="selection",
+        type=NotionType.ENUMERATION, 
+        unit=NotionUnit.NONE,
+        derived_from=["NF_Orientation"],
+        converter_code="""
+    def converter_function(args):
+        if args.get("orientation"):
+            orientation = OrientationClass(args["orientation"])
+        else:
+            orientation = OrientationClass(args["NF_Orientation"].args["orientation"])
+        if orientation.name is OrientationClass.DEPARTURE.name:
+            return {"selection": SelectionClass.SELECTS.name}
+        else:
+            return {"selection": SelectionClass.IS_SELECTED_BY.name}
+    """,
+        converter=converter_function,
+        discriminator_code="""
+    def discriminator_function(args):
+        return args["selection"]
+    """,
+        discriminator=discriminator_function
+    )
+
 #-----------------------------------------------------------------------
 
 def get_link(nv: NotionValue) -> str:
@@ -262,6 +305,19 @@ def init_config_mng_relation():
                         return ConfigurationManagementRelationClass("NODE_NODE_CONNECTION")
                 else:
                     return None
+        if notion_values.get("NF_Selection"):
+            selections = [nv for nv in notion_values.get("NF_Selection")]
+            if selections:
+                if selections[0].property.get("selection") == "SELECTS" and \
+                    selections[1].property.get("selection") == "IS_SELECTED_BY":
+                    classification0 = get_config_mng_node_classification(selections[0])
+                    classification1 = get_config_mng_node_classification(selections[1])
+                    if classification0 == "PORT" and classification1 == "PORT":
+                        return ConfigurationManagementRelationClass("PORT_PORT_SELECTION")
+                    else:
+                        return ConfigurationManagementRelationClass("SLOT_MODULE_SELECTION")
+                else:
+                    return None
                 
     PerceptiveFrame(
         id="PF_Config_Mng_Relation",
@@ -289,7 +345,25 @@ def discriminator_function(notion_frames, notion_values):
         if connections:
             if connections[0].property.get("connection") == "DOWN" and \
                 connections[1].property.get("connection") == "UP":
-                return ConfigurationManagementRelationClass("NODE_NODE_CONNECTION")
+                classification0 = get_config_mng_node_classification(connections[0])
+                classification1 = get_config_mng_node_classification(connections[1])
+                if classification0 == "PORT" and classification1 == "PORT":
+                    return ConfigurationManagementRelationClass("PORT_PORT_CONNECTION")
+                else:
+                    return ConfigurationManagementRelationClass("NODE_NODE_CONNECTION")
+            else:
+                return None
+    if notion_values.get("NF_Selection"):
+        selections = [nv for nv in notion_values.get("NF_Selection")]
+        if selections:
+            if selections[0].property.get("selection") == "SELECTS" and \
+                selections[1].property.get("selection") == "IS_SELECTED_BY":
+                classification0 = get_config_mng_node_classification(selections[0])
+                classification1 = get_config_mng_node_classification(selections[1])
+                if classification0 == "PORT" and classification1 == "PORT":
+                    return ConfigurationManagementRelationClass("PORT_PORT_SELECTION")
+                else:
+                    return ConfigurationManagementRelationClass("SLOT_MODULE_SELECTION")
             else:
                 return None
 """,
@@ -305,7 +379,7 @@ def init_config_mng_node():
         for pfi in pfis:
             link_found = False
             for nv in pfi.notion_values:
-                dnvs = nv.get_derived_notion_values()
+                dnvs = pfi.get_all_notion_values()
                 for dnv in dnvs:
                     if dnv.frame.id == "NF_Link":
                         if dnv.property["link"] == id:
@@ -318,6 +392,11 @@ def init_config_mng_node():
         if "boundary" in properties:
             if properties["boundary"] == "BOUNDS":
                 return ConfigurationManagementNodeClass("PORT")
+        if "selection" in properties:
+            if properties["selection"] == "SELECTS":
+                return ConfigurationManagementNodeClass("SLOT")
+            if properties["selection"] == "IS_SELECTED_BY":
+                return ConfigurationManagementNodeClass("MODULE")
         return ConfigurationManagementNodeClass("NODE")
                 
     PerceptiveFrame(
@@ -325,26 +404,26 @@ def init_config_mng_node():
         notion_frame_names=[],
         discriminator_code="""
 def discriminator_function(notion_frames, notion_values, id):
-properties = dict()
+    properties = dict()
 
-pfis = query_arcs(nodeId=id)
-for pfi in pfis:
-    link_found = False
-    for nv in pfi.notion_values:
-        dnvs = nv.get_derived_notion_values()
-        for dnv in dnvs:
-            if dnv.frame.id == "NF_Link":
-                if dnv.property["link"] == id:
-                    link_found = True
-                    properties[nv.frame.parameter] = nv.property[nv.frame.parameter]
-                    break
-        if link_found:
-            break
+    pfis = query_arcs(nodeId=id)
+    for pfi in pfis:
+        link_found = False
+        for nv in pfi.notion_values:
+            dnvs = nv.get_derived_notion_values()
+            for dnv in dnvs:
+                if dnv.frame.id == "NF_Link":
+                    if dnv.property["link"] == id:
+                        link_found = True
+                        properties[nv.frame.parameter] = nv.property[nv.frame.parameter]
+                        break
+            if link_found:
+                break
 
-if "boundary" in properties:
-    if properties["boundary"] == "BOUNDS":
-        return ConfigurationManagementNodeClass("PORT")
-return ConfigurationManagementNodeClass("NODE")
+    if "boundary" in properties:
+        if properties["boundary"] == "BOUNDS":
+            return ConfigurationManagementNodeClass("PORT")
+    return ConfigurationManagementNodeClass("NODE")
 """,
     discriminator=discriminator_function
 )
@@ -357,5 +436,6 @@ def init():
     init_boundary()
     init_enclosure()
     init_connection()
+    init_selection()
     init_config_mng_relation()
     init_config_mng_node()

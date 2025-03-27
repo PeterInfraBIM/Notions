@@ -1,0 +1,171 @@
+@prefix : <http://infrabim.nl/kip/demo/glass#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:01400f04-f74f-4069-bb00-647389984683 a tn:Connection ;
+    tn:inside :bf05261e-042b-4f55-9e0b-b24b176b4fd3_i0 ;
+    tn:outside :1adc305d-8b11-4e91-a01d-79856f756eae_o0 .
+
+:191bf3e2-1a36-412c-a5a8-2e799afa0de8 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_2 ;
+    tn:part :1adc305d-8b11-4e91-a01d-79856f756eae_d2 .
+
+:1ad4050d-9b8f-4b6a-879a-8d052068c7eb a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_1 ;
+    tn:part :08420446-f092-4c67-8b9b-64c99963e16f_d1 .
+
+:1c734438-3fdb-4644-8794-f3777a6a488f a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462 ;
+    tn:part :bf05261e-042b-4f55-9e0b-b24b176b4fd3 .
+
+:205152b8-7941-4a13-9382-4a26cc058777 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_0 ;
+    tn:part :1adc305d-8b11-4e91-a01d-79856f756eae_d0 .
+
+:213f3027-9dd7-4e98-866e-148c1f57e2c5 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_3 ;
+    tn:part :1adc305d-8b11-4e91-a01d-79856f756eae_d3 .
+
+:327f37e1-00c0-4f8f-b5e4-1dbd6a5ff1c1 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_2 ;
+    tn:part :08420446-f092-4c67-8b9b-64c99963e16f_d2 .
+
+:391a7683-029a-42a8-b8ba-f63d6d09047f a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462 ;
+    tn:part :08420446-f092-4c67-8b9b-64c99963e16f .
+
+:399f5618-d849-45a9-b7f5-d10b7a72e858 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_3 ;
+    tn:part :08420446-f092-4c67-8b9b-64c99963e16f_d3 .
+
+:6c6ca1ca-790b-4c8b-b9b4-54d120a34e94 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_0 ;
+    tn:part :08420446-f092-4c67-8b9b-64c99963e16f_d0 .
+
+:97289161-7e3d-4015-ac5b-8e9de07dcad8 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462_1 ;
+    tn:part :1adc305d-8b11-4e91-a01d-79856f756eae_d1 .
+
+:aef4b6c5-1be9-41e7-b8de-b299491138e1 a tn:Aggregation ;
+    tn:assembly :74245516-1b5a-4674-862f-6d087305c462 ;
+    tn:part :1adc305d-8b11-4e91-a01d-79856f756eae .
+
+:c2785074-39c5-4abc-872c-4bfb887d311d a tn:Connection ;
+    tn:inside :bf05261e-042b-4f55-9e0b-b24b176b4fd3_i1 ;
+    tn:outside :08420446-f092-4c67-8b9b-64c99963e16f_o0 .
+
+:08420446-f092-4c67-8b9b-64c99963e16f a tn:Slot ;
+    rdfs:label "2D slot GLASS PLATE INSIDE"^^xsd:string ;
+    tn:dimension "2"^^xsd:int ;
+    tn:has_down_port :08420446-f092-4c67-8b9b-64c99963e16f_d0,
+        :08420446-f092-4c67-8b9b-64c99963e16f_d1,
+        :08420446-f092-4c67-8b9b-64c99963e16f_d2,
+        :08420446-f092-4c67-8b9b-64c99963e16f_d3 ;
+    tn:has_outside_port :08420446-f092-4c67-8b9b-64c99963e16f_o0 ;
+    tn:has_parameter_type_set :879ce1a4-c9c1-4825-8b99-a92e2be67404 .
+
+:0f3c40eb-3ec6-4cb7-ac18-cfacde301373 a nt:PerceptiveFrame ;
+    rdfs:label "0f3c40eb-3ec6-4cb7-ac18-cfacde301373"^^xsd:string ;
+    nt:frame nt:NF_Height,
+        nt:NF_SpecificName,
+        nt:NF_Up,
+        nt:NF_Width .
+
+:1adc305d-8b11-4e91-a01d-79856f756eae a tn:Slot ;
+    rdfs:label "2D slot GLASS PLATE OUTSIDE"^^xsd:string ;
+    tn:dimension "2"^^xsd:int ;
+    tn:has_down_port :1adc305d-8b11-4e91-a01d-79856f756eae_d0,
+        :1adc305d-8b11-4e91-a01d-79856f756eae_d1,
+        :1adc305d-8b11-4e91-a01d-79856f756eae_d2,
+        :1adc305d-8b11-4e91-a01d-79856f756eae_d3 ;
+    tn:has_outside_port :1adc305d-8b11-4e91-a01d-79856f756eae_o0 ;
+    tn:has_parameter_type_set :0f3c40eb-3ec6-4cb7-ac18-cfacde301373 .
+
+:3984414f-30ad-49d3-a178-aa905840734b a nt:PerceptiveFrame ;
+    rdfs:label "3984414f-30ad-49d3-a178-aa905840734b"^^xsd:string ;
+    nt:frame nt:NF_SpecificName,
+        nt:NF_Thickness,
+        nt:NF_Uc .
+
+:85392696-8613-4dfb-99d1-d588abefbebb a nt:PerceptiveFrame ;
+    rdfs:label "85392696-8613-4dfb-99d1-d588abefbebb"^^xsd:string ;
+    nt:frame nt:NF_Cavity,
+        nt:NF_GlassLayers,
+        nt:NF_Height,
+        nt:NF_SpecificName,
+        nt:NF_Thickness,
+        nt:NF_Ug,
+        nt:NF_Width .
+
+:879ce1a4-c9c1-4825-8b99-a92e2be67404 a nt:PerceptiveFrame ;
+    rdfs:label "879ce1a4-c9c1-4825-8b99-a92e2be67404"^^xsd:string ;
+    nt:frame nt:NF_Height,
+        nt:NF_SpecificName,
+        nt:NF_Up,
+        nt:NF_Width .
+
+:bf05261e-042b-4f55-9e0b-b24b176b4fd3 a tn:Slot ;
+    rdfs:label "2D slot CAVITY"^^xsd:string ;
+    tn:dimension "2"^^xsd:int ;
+    tn:has_inside_port :bf05261e-042b-4f55-9e0b-b24b176b4fd3_i0,
+        :bf05261e-042b-4f55-9e0b-b24b176b4fd3_i1 ;
+    tn:has_parameter_type_set :3984414f-30ad-49d3-a178-aa905840734b .
+
+:08420446-f092-4c67-8b9b-64c99963e16f_d0 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE INSIDE DownPort0"^^xsd:string .
+
+:08420446-f092-4c67-8b9b-64c99963e16f_d1 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE INSIDE DownPort1"^^xsd:string .
+
+:08420446-f092-4c67-8b9b-64c99963e16f_d2 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE INSIDE DownPort2"^^xsd:string .
+
+:08420446-f092-4c67-8b9b-64c99963e16f_d3 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE INSIDE DownPort3"^^xsd:string .
+
+:08420446-f092-4c67-8b9b-64c99963e16f_o0 a tn:OutsidePort ;
+    rdfs:label "2D slot GLASS PLATE INSIDE OutsidePort0"^^xsd:string .
+
+:1adc305d-8b11-4e91-a01d-79856f756eae_d0 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE OUTSIDE DownPort0"^^xsd:string .
+
+:1adc305d-8b11-4e91-a01d-79856f756eae_d1 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE OUTSIDE DownPort1"^^xsd:string .
+
+:1adc305d-8b11-4e91-a01d-79856f756eae_d2 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE OUTSIDE DownPort2"^^xsd:string .
+
+:1adc305d-8b11-4e91-a01d-79856f756eae_d3 a tn:DownPort ;
+    rdfs:label "2D slot GLASS PLATE OUTSIDE DownPort3"^^xsd:string .
+
+:1adc305d-8b11-4e91-a01d-79856f756eae_o0 a tn:OutsidePort ;
+    rdfs:label "2D slot GLASS PLATE OUTSIDE OutsidePort0"^^xsd:string .
+
+:bf05261e-042b-4f55-9e0b-b24b176b4fd3_i0 a tn:InsidePort ;
+    rdfs:label "2D slot CAVITY InsidePort0"^^xsd:string .
+
+:bf05261e-042b-4f55-9e0b-b24b176b4fd3_i1 a tn:InsidePort ;
+    rdfs:label "2D slot CAVITY InsidePort1"^^xsd:string .
+
+:74245516-1b5a-4674-862f-6d087305c462 a tn:Module ;
+    rdfs:label "Offered Glazing"^^xsd:string ;
+    tn:has_parameter_type_set :85392696-8613-4dfb-99d1-d588abefbebb ;
+    tn:has_port :74245516-1b5a-4674-862f-6d087305c462_0,
+        :74245516-1b5a-4674-862f-6d087305c462_1,
+        :74245516-1b5a-4674-862f-6d087305c462_2,
+        :74245516-1b5a-4674-862f-6d087305c462_3 .
+
+:74245516-1b5a-4674-862f-6d087305c462_0 a tn:ModulePort ;
+    rdfs:label "Offered Glazing Port0"^^xsd:string .
+
+:74245516-1b5a-4674-862f-6d087305c462_1 a tn:ModulePort ;
+    rdfs:label "Offered Glazing Port1"^^xsd:string .
+
+:74245516-1b5a-4674-862f-6d087305c462_2 a tn:ModulePort ;
+    rdfs:label "Offered Glazing Port2"^^xsd:string .
+
+:74245516-1b5a-4674-862f-6d087305c462_3 a tn:ModulePort ;
+    rdfs:label "Offered Glazing Port3"^^xsd:string .
+

@@ -1,0 +1,41 @@
+@prefix : <http://infrabim.nl/kip/demo/building#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:47e8f66a-4f67-400f-9f3b-e8e8da39bd3f a tn:Aggregation ;
+    tn:assembly :a9a70e79-4a87-473c-82f3-2c7b2d2e1179 ;
+    tn:part :283d397d-4bb6-4107-931a-7cc28f650e59 .
+
+:283d397d-4bb6-4107-931a-7cc28f650e59 a tn:Slot ;
+    rdfs:label "2D slot Required Window"^^xsd:string ;
+    tn:dimension "2"^^xsd:int ;
+    tn:has_inside_port :283d397d-4bb6-4107-931a-7cc28f650e59_i0,
+        :283d397d-4bb6-4107-931a-7cc28f650e59_i1,
+        :283d397d-4bb6-4107-931a-7cc28f650e59_i2,
+        :283d397d-4bb6-4107-931a-7cc28f650e59_i3 ;
+    tn:has_parameter_type_set :5e834139-da06-4b58-be62-3a5b38518136 .
+
+:283d397d-4bb6-4107-931a-7cc28f650e59_i0 a tn:InsidePort ;
+    rdfs:label "2D slot Required Window InsidePort0"^^xsd:string .
+
+:283d397d-4bb6-4107-931a-7cc28f650e59_i1 a tn:InsidePort ;
+    rdfs:label "2D slot Required Window InsidePort1"^^xsd:string .
+
+:283d397d-4bb6-4107-931a-7cc28f650e59_i2 a tn:InsidePort ;
+    rdfs:label "2D slot Required Window InsidePort2"^^xsd:string .
+
+:283d397d-4bb6-4107-931a-7cc28f650e59_i3 a tn:InsidePort ;
+    rdfs:label "2D slot Required Window InsidePort3"^^xsd:string .
+
+:5e834139-da06-4b58-be62-3a5b38518136 a nt:PerceptiveFrame ;
+    rdfs:label "5e834139-da06-4b58-be62-3a5b38518136"^^xsd:string ;
+    nt:frame nt:NF_Height,
+        nt:NF_Material,
+        nt:NF_Uw,
+        nt:NF_Width .
+
+:a9a70e79-4a87-473c-82f3-2c7b2d2e1179 a tn:Module ;
+    rdfs:label "BUILDING"^^xsd:string .
+

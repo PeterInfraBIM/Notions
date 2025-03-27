@@ -1,0 +1,51 @@
+@prefix : <http://infrabim.nl/kip/demo/building_values#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59> tn:has_parameter_value_set :5b7f7e5d-8697-4eb2-bd49-275472f176b4 .
+
+:105d347f-04f0-4a8c-984d-45abede94d90 a nt:NotionValue ;
+    rdfs:label "Required_Window"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Window"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:483d3444-1959-4756-9525-8b1baa575793 a nt:NotionValue ;
+    nt:derived_from_nv [ a nt:NotionValue ;
+            rdfs:label "ALIGNED"^^xsd:string ;
+            nt:args [ a nt:Arg ;
+                    nt:key "gravitation_orientation"^^xsd:string ;
+                    nt:value "ALIGNED"^^xsd:string ] ;
+            nt:frame nt:NF_GravitationOrientation ],
+        [ a nt:NotionValue ;
+            rdfs:label "1800"^^xsd:string ;
+            nt:args [ a nt:Arg ;
+                    nt:key "size"^^xsd:string ;
+                    nt:value "1800"^^xsd:string ] ;
+            nt:frame nt:NF_Size ] ;
+    nt:frame nt:NF_Height .
+
+:5b7f7e5d-8697-4eb2-bd49-275472f176b4 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :105d347f-04f0-4a8c-984d-45abede94d90,
+        :483d3444-1959-4756-9525-8b1baa575793,
+        :6e80b64b-d30b-47fb-9d91-50c45ca4ca72 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/building#5e834139-da06-4b58-be62-3a5b38518136> .
+
+:6e80b64b-d30b-47fb-9d91-50c45ca4ca72 a nt:NotionValue ;
+    nt:derived_from_nv [ a nt:NotionValue ;
+            rdfs:label "PERPENDICULAR"^^xsd:string ;
+            nt:args [ a nt:Arg ;
+                    nt:key "gravitation_orientation"^^xsd:string ;
+                    nt:value "PERPENDICULAR"^^xsd:string ] ;
+            nt:frame nt:NF_GravitationOrientation ],
+        [ a nt:NotionValue ;
+            rdfs:label "1200"^^xsd:string ;
+            nt:args [ a nt:Arg ;
+                    nt:key "size"^^xsd:string ;
+                    nt:value "1200"^^xsd:string ] ;
+            nt:frame nt:NF_Size ] ;
+    nt:frame nt:NF_Width .
+

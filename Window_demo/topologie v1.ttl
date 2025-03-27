@@ -1,0 +1,140 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix top: <http://www.groeifonds.nl/topology#> .
+@prefix data: <http://www.groeifonds.nl/data#> .
+
+top:Port a rdfs:Class ;
+    rdfs:label "Port" .
+
+top:PortUp rdfs:subClassOf top:Port ;
+    rdfs:label "Up Port" .
+
+top:PortDown rdfs:subClassOf top:Port ;
+    rdfs:label "Down Port" .
+
+top:Node a rdfs:Class ;
+    rdfs:label "Node" .
+
+top:Vertex rdfs:subClassOf top:Node ;
+    rdfs:label "Vertex 0D" .
+
+top:Edge rdfs:subClassOf top:Node ;
+    rdfs:label "Edge 1D" .
+
+top:Face rdfs:subClassOf top:Node ;
+    rdfs:label "Face 2D" .
+
+top:Volume rdfs:subClassOf top:Node ;
+    rdfs:label "Volume 3D" .
+
+top:hasPort a rdf:Property ;
+    rdfs:domain top:Node ;
+    rdfs:range top:Port .
+
+top:portLink a rdf:Property ;
+    rdfs:domain top:Port ;
+    rdfs:range top:Port .
+
+data:001 a top:Vertex ;
+    rdfs:label "0D module" ;
+    top:hasPort data:001p1 ;
+    top:hasPort data:001p2 .
+
+data:002 a top:Edge ;
+    rdfs:label "1D module" ;
+    top:hasPort data:002p1 ;
+    top:hasPort data:002p2 ;
+    top:hasPort data:002p3 .
+
+data:003 a top:Vertex ;
+    rdfs:label "0D module" ;
+    top:hasPort data:003p1 ;
+    top:hasPort data:003p2 .
+
+data:004 a top:Edge ;
+    rdfs:label "1D module" ;
+    top:hasPort data:004p1 ;
+    top:hasPort data:004p2 ;
+    top:hasPort data:004p3 .
+
+data:005 a top:Face ;
+    rdfs:label "2D module" ;
+    top:hasPort data:005p1 ;
+    top:hasPort data:005p2 ;
+    top:hasPort data:005p3 ;
+    top:hasPort data:005p4 .
+
+data:006 a top:Edge ;
+    rdfs:label "1D module" ;
+    top:hasPort data:006p1 ;
+    top:hasPort data:006p2 ;
+    top:hasPort data:006p3 .
+
+data:007 a top:Vertex ;
+    rdfs:label "0D module" ;
+    top:hasPort data:007p1 ;
+    top:hasPort data:007p2 .
+
+data:008 a top:Edge ;
+    rdfs:label "1D module" ;
+    top:hasPort data:008p1 ;
+    top:hasPort data:008p2 ;
+    top:hasPort data:008p3 .
+
+data:009 a top:Vertex ;
+    rdfs:label "0D module" ;
+    top:hasPort data:009p1 ;
+    top:hasPort data:009p2 .
+
+data:001p1 a top:PortUp .
+data:001p2 a top:PortUp .
+data:002p1 a top:PortDown .
+data:002p2 a top:PortUp .
+data:002p3 a top:PortDown .
+data:003p1 a top:PortUp .
+data:003p2 a top:PortUp .
+data:004p1 a top:PortDown .
+data:004p2 a top:PortUp .
+data:004p3 a top:PortDown .
+data:005p1 a top:PortDown .
+data:005p2 a top:PortDown .
+data:005p3 a top:PortDown .
+data:005p4 a top:PortDown .
+data:006p1 a top:PortDown .
+data:006p2 a top:PortDown .
+data:006p3 a top:PortUp .
+data:007p1 a top:PortUp .
+data:007p2 a top:PortUp .
+data:008p1 a top:PortUp .
+data:008p2 a top:PortDown .
+data:008p3 a top:PortDown .
+data:009p1 a top:PortUp .
+data:009p2 a top:PortUp .
+
+data:001p1 top:portLink data:002p3 .
+data:001p2 top:portLink data:004p1 .
+data:002p1 top:portLink data:003p2 .
+data:002p2 top:portLink data:005p1 .
+data:002p3 top:portLink data:001p1 .
+data:003p1 top:portLink data:006p1 .
+data:003p2 top:portLink data:002p1 .
+data:004p1 top:portLink data:001p2 .
+data:004p2 top:portLink data:005p4 .
+data:004p3 top:portLink data:007p1 .
+data:005p1 top:portLink data:002p2 .
+data:005p2 top:portLink data:006p3 .
+data:005p3 top:portLink data:008p1 .
+data:005p4 top:portLink data:004p2 .
+data:006p1 top:portLink data:003p1 .
+data:006p2 top:portLink data:009p1 .
+data:006p3 top:portLink data:005p2 .
+data:007p1 top:portLink data:004p3 .
+data:007p2 top:portLink data:008p3 .
+data:008p1 top:portLink data:005p3 .
+data:008p2 top:portLink data:009p2 .
+data:008p3 top:portLink data:007p2 .
+data:009p1 top:portLink data:006p2 .
+data:009p2 top:portLink data:008p2 .

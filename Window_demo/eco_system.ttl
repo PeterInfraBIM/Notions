@@ -1,0 +1,201 @@
+@prefix : <http://infrabim.nl/kip/demo/eco_system#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1000465f-f388-43c8-bb93-0d714e2631be a tn:Connection ;
+    tn:inside :3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562_i1 ;
+    tn:outside :db2ec451-54ea-4470-a2b6-a3a0022f5066_o1 .
+
+:112b9e3d-4cee-4659-9cf3-fcbbc7ac0bc4 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5_2 ;
+    tn:part :d7daa9f8-c498-40b2-85ac-1acecbdbae58_i0 .
+
+:169b748f-b47e-42bc-a385-d5732a76d434 a tn:Connection ;
+    tn:inside :4aafbfeb-1184-429c-b76d-bc39e7b46928_i1 ;
+    tn:outside :db2ec451-54ea-4470-a2b6-a3a0022f5066_o2 .
+
+:25674b15-9943-4db4-956c-e324bbdedded a tn:Connection ;
+    tn:inside :3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562_i0 ;
+    tn:outside :d7daa9f8-c498-40b2-85ac-1acecbdbae58_o1 .
+
+:26e3f369-6ad6-4370-963a-529a7cc2284e a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5_0 ;
+    tn:part :58aadd99-e749-48ae-b0b0-8dbfc6e6dd65_u0 .
+
+:2d1bb62c-188f-4856-98aa-34058eb20841 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :58aadd99-e749-48ae-b0b0-8dbfc6e6dd65 .
+
+:2f442f80-2743-445a-b25d-78922a45ed19 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5_1 ;
+    tn:part :9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a_u0 .
+
+:48a8e464-4374-4ef5-a424-f4150d6c8ae2 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a .
+
+:4f1ad22b-4164-4d30-87f5-bd1c965ccd4d a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :db2ec451-54ea-4470-a2b6-a3a0022f5066 .
+
+:5066c989-7cd2-4ffa-9d00-aa96f5c0bf85 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562 .
+
+:627a88e5-b22b-4906-81c0-e1f1d73aeed5 a tn:Connection ;
+    tn:inside :9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a_i0 ;
+    tn:outside :b8822679-5c91-4e82-81f4-6b706fbfbde0_o0 .
+
+:75352833-96dc-4055-af41-15284dbb460c a tn:Connection ;
+    tn:inside :b8822679-5c91-4e82-81f4-6b706fbfbde0_i0 ;
+    tn:outside :d7daa9f8-c498-40b2-85ac-1acecbdbae58_o0 .
+
+:965080ed-584f-4f82-ae16-32e5ca05f823 a tn:Connection ;
+    tn:inside :58aadd99-e749-48ae-b0b0-8dbfc6e6dd65_i0 ;
+    tn:outside :db2ec451-54ea-4470-a2b6-a3a0022f5066_o0 .
+
+:b3c6d603-9f73-418c-add5-333c65a02376 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :d7daa9f8-c498-40b2-85ac-1acecbdbae58 .
+
+:c89bc621-cbd8-4f4b-bb1a-2e6c0cfa50b6 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :4aafbfeb-1184-429c-b76d-bc39e7b46928 .
+
+:e6e308d5-1795-4b99-b165-a9b0ba1f1110 a tn:Connection ;
+    tn:inside :4aafbfeb-1184-429c-b76d-bc39e7b46928_i0 ;
+    tn:outside :d7daa9f8-c498-40b2-85ac-1acecbdbae58_o2 .
+
+:f0a65ba2-80d4-4e1a-aace-df8ac7db0789 a tn:Aggregation ;
+    tn:assembly :8f2d4095-a42a-422d-8019-57000362a2d5 ;
+    tn:part :b8822679-5c91-4e82-81f4-6b706fbfbde0 .
+
+:16277c66-26c0-4dd9-9469-b6288801ce3b a nt:PerceptiveFrame ;
+    rdfs:label "16277c66-26c0-4dd9-9469-b6288801ce3b"^^xsd:string ;
+    nt:frame nt:NF_Size,
+        nt:NF_SpecificName,
+        nt:NF_Uf .
+
+:3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562 a tn:Slot ;
+    rdfs:label "1D slot SPACER"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_inside_port :3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562_i0,
+        :3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562_i1 .
+
+:4aafbfeb-1184-429c-b76d-bc39e7b46928 a tn:Slot ;
+    rdfs:label "1D slot ISOLATOR"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_inside_port :4aafbfeb-1184-429c-b76d-bc39e7b46928_i0,
+        :4aafbfeb-1184-429c-b76d-bc39e7b46928_i1 .
+
+:58aadd99-e749-48ae-b0b0-8dbfc6e6dd65 a tn:Slot ;
+    rdfs:label "1D slot GLASS HLD OUT"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_inside_port :58aadd99-e749-48ae-b0b0-8dbfc6e6dd65_i0 ;
+    tn:has_up_port :58aadd99-e749-48ae-b0b0-8dbfc6e6dd65_u0 .
+
+:8f2d4095-a42a-422d-8019-57000362a2d5_3 a tn:ModulePort ;
+    rdfs:label "Offered Profile Port3"^^xsd:string ;
+    tn:has_parameter_type_set :c64b6a2f-17f3-44c4-9472-46c0751be23e .
+
+:9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a a tn:Slot ;
+    rdfs:label "1D slot GLASS HLD IN"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_inside_port :9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a_i0 ;
+    tn:has_up_port :9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a_u0 .
+
+:b8822679-5c91-4e82-81f4-6b706fbfbde0 a tn:Slot ;
+    rdfs:label "1D slot GLAZING BEAD"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_inside_port :b8822679-5c91-4e82-81f4-6b706fbfbde0_i0 ;
+    tn:has_outside_port :b8822679-5c91-4e82-81f4-6b706fbfbde0_o0 .
+
+:c64b6a2f-17f3-44c4-9472-46c0751be23e a nt:PerceptiveFrame ;
+    rdfs:label "c64b6a2f-17f3-44c4-9472-46c0751be23e"^^xsd:string ;
+    nt:frame nt:NF_Offset .
+
+:d7daa9f8-c498-40b2-85ac-1acecbdbae58 a tn:Slot ;
+    rdfs:label "1D slot INNER AL PROF"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_inside_port :d7daa9f8-c498-40b2-85ac-1acecbdbae58_i0 ;
+    tn:has_outside_port :d7daa9f8-c498-40b2-85ac-1acecbdbae58_o0,
+        :d7daa9f8-c498-40b2-85ac-1acecbdbae58_o1,
+        :d7daa9f8-c498-40b2-85ac-1acecbdbae58_o2 .
+
+:db2ec451-54ea-4470-a2b6-a3a0022f5066 a tn:Slot ;
+    rdfs:label "1D slot OUTER AL PROF"^^xsd:string ;
+    tn:dimension "1"^^xsd:int ;
+    tn:has_outside_port :db2ec451-54ea-4470-a2b6-a3a0022f5066_o0,
+        :db2ec451-54ea-4470-a2b6-a3a0022f5066_o1,
+        :db2ec451-54ea-4470-a2b6-a3a0022f5066_o2 .
+
+:3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562_i0 a tn:InsidePort ;
+    rdfs:label "1D slot SPACER InsidePort0"^^xsd:string .
+
+:3fe50ec7-8ddd-48cd-b4e7-c2ee55a09562_i1 a tn:InsidePort ;
+    rdfs:label "1D slot SPACER InsidePort1"^^xsd:string .
+
+:4aafbfeb-1184-429c-b76d-bc39e7b46928_i0 a tn:InsidePort ;
+    rdfs:label "1D slot ISOLATOR InsidePort0"^^xsd:string .
+
+:4aafbfeb-1184-429c-b76d-bc39e7b46928_i1 a tn:InsidePort ;
+    rdfs:label "1D slot ISOLATOR InsidePort1"^^xsd:string .
+
+:58aadd99-e749-48ae-b0b0-8dbfc6e6dd65_i0 a tn:InsidePort ;
+    rdfs:label "1D slot GLASS HLD OUT InsidePort0"^^xsd:string .
+
+:58aadd99-e749-48ae-b0b0-8dbfc6e6dd65_u0 a tn:UpPort ;
+    rdfs:label "1D slot GLASS HLD OUT UpPort0"^^xsd:string .
+
+:8f2d4095-a42a-422d-8019-57000362a2d5_0 a tn:ModulePort ;
+    rdfs:label "Offered Profile Port0"^^xsd:string .
+
+:8f2d4095-a42a-422d-8019-57000362a2d5_1 a tn:ModulePort ;
+    rdfs:label "Offered Profile Port1"^^xsd:string .
+
+:8f2d4095-a42a-422d-8019-57000362a2d5_2 a tn:ModulePort ;
+    rdfs:label "Offered Profile Port2"^^xsd:string .
+
+:9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a_i0 a tn:InsidePort ;
+    rdfs:label "1D slot GLASS HLD IN InsidePort0"^^xsd:string .
+
+:9d2b5eaa-83c4-47ee-9c28-6006ec89ab0a_u0 a tn:UpPort ;
+    rdfs:label "1D slot GLASS HLD IN UpPort0"^^xsd:string .
+
+:b8822679-5c91-4e82-81f4-6b706fbfbde0_i0 a tn:InsidePort ;
+    rdfs:label "1D slot GLAZING BEAD InsidePort0"^^xsd:string .
+
+:b8822679-5c91-4e82-81f4-6b706fbfbde0_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot GLAZING BEAD OutsidePort0"^^xsd:string .
+
+:d7daa9f8-c498-40b2-85ac-1acecbdbae58_i0 a tn:InsidePort ;
+    rdfs:label "1D slot INNER AL PROF InsidePort0"^^xsd:string .
+
+:d7daa9f8-c498-40b2-85ac-1acecbdbae58_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot INNER AL PROF OutsidePort0"^^xsd:string .
+
+:d7daa9f8-c498-40b2-85ac-1acecbdbae58_o1 a tn:OutsidePort ;
+    rdfs:label "1D slot INNER AL PROF OutsidePort1"^^xsd:string .
+
+:d7daa9f8-c498-40b2-85ac-1acecbdbae58_o2 a tn:OutsidePort ;
+    rdfs:label "1D slot INNER AL PROF OutsidePort2"^^xsd:string .
+
+:db2ec451-54ea-4470-a2b6-a3a0022f5066_o0 a tn:OutsidePort ;
+    rdfs:label "1D slot OUTER AL PROF OutsidePort0"^^xsd:string .
+
+:db2ec451-54ea-4470-a2b6-a3a0022f5066_o1 a tn:OutsidePort ;
+    rdfs:label "1D slot OUTER AL PROF OutsidePort1"^^xsd:string .
+
+:db2ec451-54ea-4470-a2b6-a3a0022f5066_o2 a tn:OutsidePort ;
+    rdfs:label "1D slot OUTER AL PROF OutsidePort2"^^xsd:string .
+
+:8f2d4095-a42a-422d-8019-57000362a2d5 a tn:Module ;
+    rdfs:label "Offered Profile"^^xsd:string ;
+    tn:has_parameter_type_set :16277c66-26c0-4dd9-9469-b6288801ce3b ;
+    tn:has_port :8f2d4095-a42a-422d-8019-57000362a2d5_0,
+        :8f2d4095-a42a-422d-8019-57000362a2d5_1,
+        :8f2d4095-a42a-422d-8019-57000362a2d5_2,
+        :8f2d4095-a42a-422d-8019-57000362a2d5_3 .
+

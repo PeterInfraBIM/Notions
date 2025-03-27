@@ -1,0 +1,154 @@
+# baseURI: http://infrabim.nl/kip/demo/selections
+# imports: http://infrabim.nl/kip/demo/building
+# imports: http://infrabim.nl/kip/demo/corner
+# imports: http://infrabim.nl/kip/demo/eco_system
+# imports: http://infrabim.nl/kip/demo/glass
+# imports: http://infrabim.nl/kip/demo/window
+# imports: http://infrabim.nl/kip/notions/nt
+# imports: http://infrabim.nl/kip/topology_network
+# prefix: selections
+
+@prefix building: <http://infrabim.nl/kip/demo/building#> .
+@prefix corner: <http://infrabim.nl/kip/demo/corner#> .
+@prefix eco_system: <http://infrabim.nl/kip/demo/eco_system#> .
+@prefix glass: <http://infrabim.nl/kip/demo/glass#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix selections: <http://infrabim.nl/kip/demo/selections#> .
+@prefix topology_network: <http://infrabim.nl/kip/topology_network#> .
+@prefix window: <http://infrabim.nl/kip/demo/window#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/demo/selections>
+  rdf:type owl:Ontology ;
+  owl:imports <http://infrabim.nl/kip/demo/building> ;
+  owl:imports <http://infrabim.nl/kip/demo/corner> ;
+  owl:imports <http://infrabim.nl/kip/demo/eco_system> ;
+  owl:imports <http://infrabim.nl/kip/demo/glass> ;
+  owl:imports <http://infrabim.nl/kip/demo/window> ;
+  owl:imports <http://infrabim.nl/kip/notions/nt> ;
+  owl:imports <http://infrabim.nl/kip/topology_network> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://infrabim.nl/kip/demo/selections#1a99088c-fb1d-4df8-8138-b7bf0208fd2e>
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module corner:dcc67a6f-4352-44b5-b098-2009fbf331f3 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_0 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_1 ;
+  topology_network:selecting_slot window:d759f0fb-0405-40ff-8bbf-393edfe60641 ;
+  topology_network:selecting_slot_port window:d759f0fb-0405-40ff-8bbf-393edfe60641_u0 ;
+  topology_network:selecting_slot_port window:d759f0fb-0405-40ff-8bbf-393edfe60641_u1 ;
+  rdfs:label "JOINT TR2Corner selection" ;
+.
+<http://infrabim.nl/kip/demo/selections#23e3535c-f8c8-485e-be7a-37d791c29f31>
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_0> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_1> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_2> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_3> ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#0172be31-3d17-4fc2-bb24-3507ab21e5e8> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0172be31-3d17-4fc2-bb24-3507ab21e5e8_d0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0172be31-3d17-4fc2-bb24-3507ab21e5e8_d1> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0172be31-3d17-4fc2-bb24-3507ab21e5e8_o0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0172be31-3d17-4fc2-bb24-3507ab21e5e8_u0> ;
+  rdfs:label "JAMB Top2Eco_system selection" ;
+.
+<http://infrabim.nl/kip/demo/selections#2db5cc98-fe3f-4f7d-b484-85582ca4fa7d>
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_0> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_1> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_2> ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#0b35d00d-b4f5-4ee8-a02e-3c84cde27e39> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_d1> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_o0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#0b35d00d-b4f5-4ee8-a02e-3c84cde27e39_u0> ;
+  rdfs:label "SILL Right2Eco_system selection" ;
+.
+<http://infrabim.nl/kip/demo/selections#85e61a44-fcd6-4f66-b0e2-523fd476089d>
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_0> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_1> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_2> ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#31d07757-a510-4aa0-9341-1b2fbab41cd0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#31d07757-a510-4aa0-9341-1b2fbab41cd0_d0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#31d07757-a510-4aa0-9341-1b2fbab41cd0_d1> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#31d07757-a510-4aa0-9341-1b2fbab41cd0_o0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#31d07757-a510-4aa0-9341-1b2fbab41cd0_u0> ;
+  rdfs:label "JAMB Bottom2Eco_system selection" ;
+.
+<http://infrabim.nl/kip/demo/selections#94ab28b4-c889-4018-aacf-9af3264f0ad4>
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module window:b3f9149f-a726-4977-af2a-1821687be2e5 ;
+  topology_network:selected_module_port window:b3f9149f-a726-4977-af2a-1821687be2e5_0 ;
+  topology_network:selected_module_port window:b3f9149f-a726-4977-af2a-1821687be2e5_1 ;
+  topology_network:selected_module_port window:b3f9149f-a726-4977-af2a-1821687be2e5_2 ;
+  topology_network:selected_module_port window:b3f9149f-a726-4977-af2a-1821687be2e5_3 ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59_i0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59_i1> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59_i2> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/building#283d397d-4bb6-4107-931a-7cc28f650e59_i3> ;
+  rdfs:label "Building2Window selection" ;
+.
+selections:b276c1e0-fc7c-4518-9394-de14d5df70ab
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module corner:dcc67a6f-4352-44b5-b098-2009fbf331f3 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_0 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_1 ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#26c96058-0593-478d-9535-fed1f4fe877d> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#26c96058-0593-478d-9535-fed1f4fe877d_u0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#26c96058-0593-478d-9535-fed1f4fe877d_u1> ;
+  rdfs:label "JOINT TL2Corner selection" ;
+.
+selections:b680d537-b270-41ae-bcac-35bf65f23552
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_0> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_1> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/eco_system#8f2d4095-a42a-422d-8019-57000362a2d5_2> ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#7dbc5958-a24a-4f76-b036-6bc1b900d4e2> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#7dbc5958-a24a-4f76-b036-6bc1b900d4e2_d1> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#7dbc5958-a24a-4f76-b036-6bc1b900d4e2_o0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#7dbc5958-a24a-4f76-b036-6bc1b900d4e2_u0> ;
+  rdfs:label "SILL Left2Eco_system selection" ;
+.
+selections:e1f5a5e0-f7bf-4d65-87d3-8813a5049a9c
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module corner:dcc67a6f-4352-44b5-b098-2009fbf331f3 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_0 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_1 ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#4d2ed7ee-e6ff-4a04-b654-c0474080035d> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#4d2ed7ee-e6ff-4a04-b654-c0474080035d_u0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#4d2ed7ee-e6ff-4a04-b654-c0474080035d_u1> ;
+  rdfs:label "JOINT BL2Corner selection" ;
+.
+selections:e76ec850-0f47-4c4c-bf7b-57532b0b80d6
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module <http://infrabim.nl/kip/demo/glass#74245516-1b5a-4674-862f-6d087305c462> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/glass#74245516-1b5a-4674-862f-6d087305c462_0> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/glass#74245516-1b5a-4674-862f-6d087305c462_1> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/glass#74245516-1b5a-4674-862f-6d087305c462_2> ;
+  topology_network:selected_module_port <http://infrabim.nl/kip/demo/glass#74245516-1b5a-4674-862f-6d087305c462_3> ;
+  topology_network:selecting_slot window:a6c0133c-d05f-4810-90c1-273a64fedeaa ;
+  topology_network:selecting_slot_port window:a6c0133c-d05f-4810-90c1-273a64fedeaa_d0 ;
+  topology_network:selecting_slot_port window:a6c0133c-d05f-4810-90c1-273a64fedeaa_d1 ;
+  topology_network:selecting_slot_port window:a6c0133c-d05f-4810-90c1-273a64fedeaa_d2 ;
+  topology_network:selecting_slot_port window:a6c0133c-d05f-4810-90c1-273a64fedeaa_d3 ;
+  rdfs:label "Window2Glass selection" ;
+.
+selections:fd44058f-6532-4829-9540-9ccbc74089b8
+  rdf:type topology_network:Selection ;
+  topology_network:selected_module corner:dcc67a6f-4352-44b5-b098-2009fbf331f3 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_0 ;
+  topology_network:selected_module_port corner:dcc67a6f-4352-44b5-b098-2009fbf331f3_1 ;
+  topology_network:selecting_slot <http://infrabim.nl/kip/demo/window#55774a83-0acb-47bf-83cc-9bb7bac58b3c> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#55774a83-0acb-47bf-83cc-9bb7bac58b3c_u0> ;
+  topology_network:selecting_slot_port <http://infrabim.nl/kip/demo/window#55774a83-0acb-47bf-83cc-9bb7bac58b3c_u1> ;
+  rdfs:label "JOINT BR2Corner selection" ;
+.

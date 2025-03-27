@@ -1,0 +1,19 @@
+@prefix : <http://infrabim.nl/kip/demo/glass_values#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/demo/glass#74245516-1b5a-4674-862f-6d087305c462> tn:has_parameter_value_set :19052a87-d443-44c9-9192-df7228ca471a .
+
+:19052a87-d443-44c9-9192-df7228ca471a a nt:PerceptiveFrameInstance ;
+    nt:notion_value :28921af3-aa1e-403e-9d92-df29559a1fb7 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/glass#85392696-8613-4dfb-99d1-d588abefbebb> .
+
+:28921af3-aa1e-403e-9d92-df29559a1fb7 a nt:NotionValue ;
+    rdfs:label "Scheuten Iso S+"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Scheuten Iso S+"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+

@@ -1,0 +1,136 @@
+@prefix : <http://infrabim.nl/kip/demo/values#> .
+@prefix nt: <http://infrabim.nl/kip/notions/nt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tn: <http://infrabim.nl/kip/topology_network#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://infrabim.nl/kip/demo/window#0172be31-3d17-4fc2-bb24-3507ab21e5e8> tn:has_parameter_value_set :de13ce57-4b4b-4b0b-80c7-af225fb91656 .
+
+<http://infrabim.nl/kip/demo/window#0b35d00d-b4f5-4ee8-a02e-3c84cde27e39> tn:has_parameter_value_set :34f1691a-3193-44cb-8bf7-b3c5ef5e6758 .
+
+<http://infrabim.nl/kip/demo/window#26c96058-0593-478d-9535-fed1f4fe877d> tn:has_parameter_value_set :d9399ac1-f5ba-4b6b-9796-955b825bbc27 .
+
+<http://infrabim.nl/kip/demo/window#31d07757-a510-4aa0-9341-1b2fbab41cd0> tn:has_parameter_value_set :b061fd04-5038-4005-b20a-65a36dc9df2a .
+
+<http://infrabim.nl/kip/demo/window#4d2ed7ee-e6ff-4a04-b654-c0474080035d> tn:has_parameter_value_set :8dd4721f-b4a0-401f-b560-d0d5b56c171d .
+
+<http://infrabim.nl/kip/demo/window#55774a83-0acb-47bf-83cc-9bb7bac58b3c> tn:has_parameter_value_set :23d3c4bc-ea58-4f92-9885-d67e3daee8d8 .
+
+<http://infrabim.nl/kip/demo/window#7dbc5958-a24a-4f76-b036-6bc1b900d4e2> tn:has_parameter_value_set :12c96e32-0a4d-40cd-8d7f-6c51b1d82be4 .
+
+<http://infrabim.nl/kip/demo/window#a6c0133c-d05f-4810-90c1-273a64fedeaa> tn:has_parameter_value_set :db4f412d-ffce-4632-8ada-e7f28d60607c .
+
+<http://infrabim.nl/kip/demo/window#b3f9149f-a726-4977-af2a-1821687be2e5> tn:has_parameter_value_set :19052a87-d443-44c9-9192-df7228ca471a .
+
+<http://infrabim.nl/kip/demo/window#d759f0fb-0405-40ff-8bbf-393edfe60641> tn:has_parameter_value_set :5a275002-de28-4755-8e48-b44dcc5501d4 .
+
+:12c96e32-0a4d-40cd-8d7f-6c51b1d82be4 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :d9338a43-8f09-448e-88cf-cefcc45c6b2d ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#17a42f2b-21da-46e9-84f4-2b62983a1d21> .
+
+:19052a87-d443-44c9-9192-df7228ca471a a nt:PerceptiveFrameInstance ;
+    nt:notion_value :9ebc9308-8293-4afe-b502-1c26961a2a67 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#4feef65d-7885-4773-bff1-da40c7acab1f> .
+
+:23d3c4bc-ea58-4f92-9885-d67e3daee8d8 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :df2162fb-4c65-468f-8761-f4ea6b0daadd ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#b24f2d3a-136d-407b-87e3-1142da702495> .
+
+:2894be3b-5614-4616-b798-e317ed08a258 a nt:NotionValue ;
+    rdfs:label "Required_Top_Jamb"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Top_Jamb"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:34f1691a-3193-44cb-8bf7-b3c5ef5e6758 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :7792f996-0e38-4d10-99af-e6806119ec0c ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#dec0cff4-de1e-458d-8d2c-00c8dbec009a> .
+
+:3c1ad555-4cf0-4e13-b758-d4453b21affb a nt:NotionValue ;
+    rdfs:label "Required_Top_Right_Joint"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Top_Right_Joint"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:5a275002-de28-4755-8e48-b44dcc5501d4 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :3c1ad555-4cf0-4e13-b758-d4453b21affb ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#c68ba561-c546-4444-90d8-8672b06a88bc> .
+
+:7792f996-0e38-4d10-99af-e6806119ec0c a nt:NotionValue ;
+    rdfs:label "Required_Right_Sill"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Right_Sill"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:8dd4721f-b4a0-401f-b560-d0d5b56c171d a nt:PerceptiveFrameInstance ;
+    nt:notion_value :d7f59a90-e135-4353-bd31-e0e61ef95624 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#a7bcfa2c-ff30-453d-8c34-371b7104ff44> .
+
+:9ebc9308-8293-4afe-b502-1c26961a2a67 a nt:NotionValue ;
+    rdfs:label "REY ECO 32mm System"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "REY ECO 32mm System"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:b061fd04-5038-4005-b20a-65a36dc9df2a a nt:PerceptiveFrameInstance ;
+    nt:notion_value :d6f8617f-24ae-4ea1-bdbd-e15237fbafca ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#9b74717c-70d5-4d60-ba42-4efafb75ceca> .
+
+:d6f8617f-24ae-4ea1-bdbd-e15237fbafca a nt:NotionValue ;
+    rdfs:label "Required_Bottom_Jamb"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Bottom_Jamb"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:d7f59a90-e135-4353-bd31-e0e61ef95624 a nt:NotionValue ;
+    rdfs:label "Required_Bottom_Left_Joint"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Bottom_Left_Joint"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:d9338a43-8f09-448e-88cf-cefcc45c6b2d a nt:NotionValue ;
+    rdfs:label "Required_Left_Sill"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Left_Sill"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:d9399ac1-f5ba-4b6b-9796-955b825bbc27 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :e3dff588-9cab-4777-a4bd-06d02d82b1d9 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#90ed72f3-fa98-4063-869a-f3da93a9456d> .
+
+:db4f412d-ffce-4632-8ada-e7f28d60607c a nt:PerceptiveFrameInstance ;
+    nt:notion_value :dcf7cad0-f0e7-4528-985f-affc22ae5c12 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#72357296-50aa-49bf-8f10-a4ac790ea8dd> .
+
+:dcf7cad0-f0e7-4528-985f-affc22ae5c12 a nt:NotionValue ;
+    rdfs:label "Required_Glazing"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Glazing"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:de13ce57-4b4b-4b0b-80c7-af225fb91656 a nt:PerceptiveFrameInstance ;
+    nt:notion_value :2894be3b-5614-4616-b798-e317ed08a258 ;
+    nt:perceptive_frame <http://infrabim.nl/kip/demo/window#22a4133a-c7b4-4c14-b11c-7194fdfb0a96> .
+
+:df2162fb-4c65-468f-8761-f4ea6b0daadd a nt:NotionValue ;
+    rdfs:label "Required_Bottom_Right_Joint"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Bottom_Right_Joint"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
+:e3dff588-9cab-4777-a4bd-06d02d82b1d9 a nt:NotionValue ;
+    rdfs:label "Required_Top_Left_Joint"^^xsd:string ;
+    nt:args [ a nt:Arg ;
+            nt:key "specific_name"^^xsd:string ;
+            nt:value "Required_Top_Left_Joint"^^xsd:string ] ;
+    nt:frame nt:NF_SpecificName .
+
